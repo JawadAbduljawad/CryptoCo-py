@@ -38,7 +38,7 @@ def sprice(
 	include_last_updated: bool = typer.Option(False)
 ):
 	""" price(s) of cryptocurrency """
-	response = requests.get(f"https://api.coingecko.com/api/v3/simple/price?ids={ids}&vs_currency={vs_currency}&include_market_cap={bol(cap)}&include_24hr_vol={bol(vol)}&include_24hr_change={bol(change)}&include_last_updated_at={include_last_updated}")
+	response = requests.get(f"https://api.coingecko.com/api/v3/simple/price?ids={ids}&vs_currencies={vs_currency}&include_market_cap={bol(cap)}&include_24hr_vol={bol(vol)}&include_24hr_change={bol(change)}&include_last_updated_at={include_last_updated}")
 	if response.json() == {}:
 		typer.echo("unknown coin name")
 		raise typer.Exit(code=1)

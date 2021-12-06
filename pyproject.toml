@@ -1,16 +1,18 @@
 [tool.poetry]
 name = "cryptoco-py"
-version = "0.1.1"
+version = "0.1.6"
 description = "A package to query cryptocurrency information"
 authors = ["Jawad Abduljawad(TerminalJ) <jawadhamdiabduljawad@gmail.com>"]
 readme = 'README.md'
 license = 'MIT'
+repository ='https://github.com/Edmain1/CryptoCo-py'
+
 
 [tool.poetry.scripts]
 cryptoco-py = "cryptoco_py.__main__:app"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3"
 typer = {extras = ["all"], version = "^0.4.0"}
 requests = "^2.26.0"
 
