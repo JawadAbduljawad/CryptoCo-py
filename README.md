@@ -9,6 +9,7 @@ by typing simple commands.
 - [Installation](#installation)
 - [Requirements](#requirements)
 - [Usage](#usage)
+- [Contributing](#contributing)
 - [License](#license)
 
 ## Installation
