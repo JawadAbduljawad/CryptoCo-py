@@ -30,8 +30,12 @@ pip install cryptoco-py
 ## Usage
 
 ```bash
-# pings the server
 cryptoco-py [OPTIONS] COMMAND [ARGS]...
+```
+
+```bash
+# pings the server
+cryptoco-py ping
 ```
 
 >NOTE: you might not be able to run the command instantly after installing it
